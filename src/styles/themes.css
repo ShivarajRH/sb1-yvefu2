@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Existing themes remain unchanged */
+[data-theme='light'] {
+  --color-primary: 59 130 246;
+  --color-secondary: 99 102 241;
+  --color-background: 249 250 251;
+  --color-text: 31 41 55;
+  --color-card: 255 255 255;
+  --color-border: 229 231 235;
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --gradient-primary: linear-gradient(135deg, rgb(59 130 246), rgb(99 102 241));
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+[data-theme='dark'] {
+  --color-primary: 96 165 250;
+  --color-secondary: 129 140 248;
+  --color-background: 17 24 39;
+  --color-text: 243 244 246;
+  --color-card: 31 41 55;
+  --color-border: 75 85 99;
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+  --gradient-primary: linear-gradient(135deg, rgb(96 165 250), rgb(129 140 248));
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+[data-theme='blue'] {
+  --color-primary: 37 99 235;
+  --color-secondary: 79 70 229;
+  --color-background: 239 246 255;
+  --color-text: 30 58 138;
+  --color-card: 219 234 254;
+  --color-border: 191 219 254;
+  --shadow-card: 0 4px 6px -1px rgb(37 99 235 / 0.2);
+  --gradient-primary: linear-gradient(135deg, rgb(37 99 235), rgb(79 70 229));
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* New Modern Theme */
+[data-theme='modern'] {
+  --color-primary: 79 70 229;
+  --color-secondary: 139 92 246;
+  --color-background: 250 250 252;
+  --color-text: 17 24 39;
+  --color-card: 255 255 255;
+  --color-border: 237 233 254;
+  --shadow-card: 0 10px 15px -3px rgba(79, 70, 229, 0.1);
+  --gradient-primary: linear-gradient(135deg, rgb(79 70 229), rgb(139 92 246));
+  font-family: 'Inter', sans-serif;
+}
+
+[data-theme='modern'] h1, [data-theme='modern'] h2, [data-theme='modern'] h3 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+[data-theme='modern'] .card {
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* New Elegant Theme */
+[data-theme='elegant'] {
+  --color-primary: 76 5 25;
+  --color-secondary: 146 20 12;
+  --color-background: 253 252 251;
+  --color-text: 28 25 23;
+  --color-card: 255 255 255;
+  --color-border: 241 238 235;
+  --shadow-card: 0 8px 20px rgba(76, 5, 25, 0.08);
+  --gradient-primary: linear-gradient(135deg, rgb(76 5 25), rgb(146 20 12));
+  font-family: 'Playfair Display', serif;
+}
+
+[data-theme='elegant'] h1, [data-theme='elegant'] h2, [data-theme='elegant'] h3 {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+[data-theme='elegant'] .card {
+  border-radius: 8px;
+  border: 1px solid rgb(241 238 235);
+}
+
+/* New Vibrant Theme */
+[data-theme='vibrant'] {
+  --color-primary: 16 185 129;
+  --color-secondary: 14 165 233;
+  --color-background: 240 253 250;
+  --color-text: 15 23 42;
+  --color-card: 255 255 255;
+  --color-border: 204 251 241;
+  --shadow-card: 0 12px 24px -4px rgba(16, 185, 129, 0.15);
+  --gradient-primary: linear-gradient(135deg, rgb(16 185 129), rgb(14 165 233));
+  font-family: 'Poppins', sans-serif;
+}
+
+[data-theme='vibrant'] h1, [data-theme='vibrant'] h2, [data-theme='vibrant'] h3 {
+  font-weight: 600;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='vibrant'] .card {
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #f8fffe);
+}
+
+/* Common theme transitions */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card, button, input, select {
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,14 @@
+@import url('styles/scrollbar.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800;
+  }
+}
+.welcomeModelMaxHeight {
+  max-height: 39vh;
+}
